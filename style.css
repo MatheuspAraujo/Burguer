@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Galada&family=Open+Sans:wght@300;400;500&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+    --cor-de-fundo:#ffffff;
+    --cor-do-texto:#000000;
+    --cor-botao: #EA0000;
+    --cor-sombra-botao: #6b0000;
+    --laranja:#FF9900;
+    --vermelho:#EA0000;
+    --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --fonte-secundario: "Josefin Sans";
+    --preto: #000000;
+    --cinza:#474646;
+    --cinza-claro: #858585;
+    --fonte-principal:"Galada"
+}
+
+body{
+    font-family: "Galada", sans-serif;
+}
+
+.logo{
+    height: 60px;
+    width: auto;
+}
+
+#navbar {
+    display: flex;
+    background-color: var(--cor-de-fundo);
+    color: var(--cor-do-texto);
+    justify-content: center;
+    top: 0px;
+    width: 100%;
+}
+
+#navbar .navbar-container {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 15px 80px;
+}
+
+#navbar .navbar-container ul {
+    display: flex;
+    list-style: none;
+}
+
+#navbar .navbar-container ul li{
+    padding: 0 45px;
+    transition: all 300ms ease;
+    font-size: 1.3em;
+}
+
+#navbar .navbar-container ul li:hover{
+    color: var(--laranja);
+    cursor: pointer;
+}
+
+/* ------------------------------------------------------------------------------------ */
+
+
+#content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.content-container{
+    padding-left: 80px;
+    font-size: 1.5em;
+}
+
+.content-container h3{
+    font-weight: 100;
+    color: var(--vermelho);
+}
+
+.content-container h1{
+    font-weight: 200;
+    font-size: 2.5em;
+}
+
+.content-container .preço{
+    margin-top: 3px;
+    font-size: 1.5em;
+    color: var(--laranja);
+}
+
+.content-container .preço span{
+    color: var(--cor-do-texto);
+    text-decoration: line-through     /* risco para o desconto*/
+}
+
+.content-container button{
+    margin-top: 5px;
+    padding: 15px 15px;
+    border-radius: 10px;
+    border-color: var(--vermelho); 
+    border-style: solid;
+    color: var(--cor-de-fundo);
+    background-color: var(--cor-botao);
+    font-size: 0.6em;
+    box-shadow: 2px 2px var(--cor-sombra-botao);
+}
+
+.content-container button:hover{
+    color: var(--laranja);
+    cursor: pointer;
+}
+
+.content-img{
+    height: 85vh;
+    width: auto;
+    margin-right: 70px;
+}
+
+span{
+    color: var(--laranja);
+}
+
+
+
+
+
